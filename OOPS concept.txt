@@ -1,0 +1,75 @@
+1. Inheritance is a mechanism in Java where one class can inherit the properties and methods of another class. This allows you to reuse code and create more complex and sophisticated classes.
+2. The superclass is the class from which the subclass inherits. The subclass is the class that inherits from the superclass.
+3. Inheritance is implemented in Java using the extends keyword. The extends keyword is used to specify that one class inherits from another class.
+4. Polymorphism is the ability of an object to take on different forms. In Java, polymorphism is achieved through inheritance and method overloading.
+5. Method overloading and method overriding are two ways to achieve polymorphism in Java.
+Method overloading is when a class has multiple methods with the same name but different parameters. The method is called with the appropriate parameters, and the correct method is executed.
+Method overriding is when a subclass has a method with the same name and parameters as a method in the superclass. The method in the subclass is executed instead of the method in the superclass.
+The main difference between method overloading and method overriding is that method overloading is done within a class, while method overriding is done between a subclass and its superclass.
+Here is a table summarizing the differences between method overloading and method overriding:
+FeatureMethod overloadingMethod overridingDefinitionA class has multiple methods with the same name but different parameters.A subclass has a method with the same name and parameters as a method in the superclass.Where it is usedWithin a classBetween a subclass and its superclassWhen it is usedTo provide different implementations of a method for different data types.To provide a more specialized implementation of a method from the superclass.6..Abstraction is a concept in object-oriented programming that allows you to hide the implementation details of an object and only expose the essential features to the user. This makes the code more modular and easier to understand.
+An abstract class is a class that cannot be instantiated. It can only be used as a base class for other classes. An abstract class can have abstract methods, which are methods that do not have a body. The body of the abstract method must be implemented in the subclass.
+The example you gave is a good example of abstraction. The Sports class is an abstract class that defines the jump() method as an abstract method. This means that the jump() method must be implemented in the subclass. The Human and Dog classes are subclasses of Sports that implement the jump() method.
+In this example, the Sports class is the abstraction. It hides the implementation details of the jump() method and only exposes the essential feature of jumping. The Human and Dog classes are the refinements of the abstraction. They implement the jump() method in different ways, depending on the specific capabilities of the human or dog.
+Abstraction is a powerful concept that can be used to make code more modular, reusable, and understandable. It is one of the fundamental concepts of object-oriented programming.
+Here are some other examples of abstraction:
+* A car is an abstraction of the internal combustion engine, the wheels, and the body.
+* A bank account is an abstraction of the underlying database and financial transactions.
+* A web browser is an abstraction of the underlying network protocols and the rendering engine.
+Q 7. 
+* Abstract method
+1. An abstract method is a method that does not have a body. The body of the abstract method must be implemented in the subclass.
+2. An abstract method is declared with the abstract keyword.
+3. An abstract method cannot be overridden.
+* Final method
+1. A final method is a method that cannot be overridden.
+2. A final method is declared with the final keyword.
+3. A final method can be abstract or concrete.
+Here is an example of an abstract method:
+abstract void jump();
+This method does not have a body, so it must be implemented in the subclass.
+Q8. 
+Here is an example of a final method:
+final void printName() {
+  System.out.println("My name is Bard.");
+}
+This method cannot be overridden.
+The final class is a class that cannot be inherited. This means that a subclass cannot be created from a final class.
+Here is an example of a final class:
+final class String {
+  // ...
+}
+This class cannot be inherited.
+Q9.
+Abstraction and encapsulation are two important concepts in object-oriented programming (OOP). They are often confused with each other, but they are actually different.
+Abstraction is the process of hiding the implementation details of an object and only exposing the essential features to the user. This makes the code more modular and easier to understand.
+Encapsulation is the process of grouping together the data and methods of an object and making them accessible only through the object's methods. This protects the data from unauthorized access and makes the code more robust.
+Here is a table summarizing the differences between abstraction and encapsulation:
+FeatureAbstractionEncapsulationDefinitionHiding the implementation details of an objectGrouping together the data and methods of an object and making them accessible only through the object's methodsPurposeTo make the code more modular and easier to understandTo protect the data from unauthorized access and make the code more robustHow it is achievedBy using abstract classes and interfacesBy using access modifiersdrive_spreadsheetExport to Sheets
+Here is an example of abstraction:
+abstract class Shape {
+  abstract void draw();
+}
+
+class Circle extends Shape {
+  void draw() {
+    // ...
+  }
+}
+The Shape class is an abstract class. It has an abstract method called draw(). The Circle class is a subclass of Shape. It implements the draw() method.
+In this example, the Shape class is the abstraction. It hides the implementation details of the draw() method and only exposes the essential feature of drawing. The Circle class is the refinement of the abstraction. It implements the draw() method in a specific way for a circle.
+Here is an example of encapsulation:
+class Account {
+  private int balance;
+
+  public void deposit(int amount) {
+    balance += amount;
+  }
+
+  public int getBalance() {
+    return balance;
+  }
+}
+The Account class is an example of encapsulation. The balance variable is private, which means it can only be accessed by the methods of the Account class. This protects the data from unauthorized access.
+
+
